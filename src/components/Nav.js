@@ -27,6 +27,11 @@ function Nav({ history }) {
         <div style={{ flexGrow: 1 }} />
         {ctx.auth.id ? (
           <>
+           <Tooltip title="Add">
+              <IconButton component={Link} to="/add">
+                <People style={{ color: "white" }} />
+              </IconButton>
+            </Tooltip>
             <Tooltip title="Users">
               <IconButton component={Link} to="/users">
                 <People style={{ color: "white" }} />
